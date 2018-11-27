@@ -1,0 +1,184 @@
+﻿<Window x:Class="Wikipedia.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wikipedia"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="1000">
+    <TabControl>
+        <TabItem Header="Заглавная страница">
+            <FlowDocumentScrollViewer IsSelectionEnabled="False">
+                
+                <FlowDocument>                   
+                        <Paragraph TextAlignment="Center" FontWeight="Bold">
+                        <Span FontSize="32">
+                            Добро Пожаловать в
+                        </Span>
+                        <Span FontSize="32" Foreground="Blue">
+                            Википедию
+                        </Span>
+                    </Paragraph>
+                    <Paragraph TextAlignment="Center">
+                        <Span FontSize="14">
+                            свободную энциклопедию, которую может редактировать каждый.
+                        </Span>
+                    </Paragraph>
+                    <Paragraph TextAlignment="Center" Margin="0,40,0,0" FontSize="14">
+                       Избранная статья
+                    </Paragraph>
+                    <Paragraph TextAlignment="Center" FontSize="24" Foreground="Blue">
+                        Протеасома
+                    </Paragraph>
+                    <Paragraph>
+                        <Floater Width="150" Padding="5,0,5,0" HorizontalAlignment="Right">
+                            <BlockUIContainer>
+                                <Image Source="/img/220px-Proteaosome_1fnt_side.png"></Image>
+                            </BlockUIContainer>
+                            <Paragraph FontStyle="Italic" FontSize="10">Ленточная диаграмма протеасомы, вид сбоку. Активный сайт, гидролизующий белки, находится внутри цилиндра</Paragraph>
+                        </Floater>
+                        <Span Foreground="DarkBlue">
+                            Протеасома
+                        </Span>
+                         (от англ. protease — протеиназа и лат. soma — тело) — многобелковый комплекс, разрушающий ненужные или дефектные белки при помощи протеолиза (химической реакции, при которой происходит разрыв пептидных связей) до коротких пептидов (4—25 аминокислотных остатков). Протеасомы присутствуют в клетках эукариот, архей и некоторых бактерий. Деградация 80—90 % внутриклеточных белков происходит при участии протеасомы. Для того чтобы белок-мишень расщепился протеасомой, он должен быть помечен путём присоединения к нему маленького белка убиквитина. Реакция присоединения убиквитина катализируется ферментами убиквитинлигазами. Присоединение первой молекулы убиквитина к белку служит для убиквитинлигаз сигналом для дальнейшего присоединения молекул убиквитина. В результате к белку оказывается присоединена полиубиквитиновая цепь, которая связывается с протеасомой и обеспечивает расщепление белка-мишени. В целом вся эта система получила название убиквитин-зависимой деградации белка.
+
+Протеасомальная деградация белка важна для протекания многих клеточных процессов, включая клеточный цикл, регуляцию экспрессии генов и ответ на окислительный стресс.
+                    </Paragraph>
+                                
+                </FlowDocument>
+                
+            </FlowDocumentScrollViewer>
+            
+        </TabItem>
+        <TabItem Header="Просмотри вики текста"
+            ></TabItem>
+        <TabItem Header="Текущие события">           
+            <FlowDocument>
+            <Paragraph FontSize="24">
+                Текущие события
+            </Paragraph>
+            <Paragraph>
+                <Span FontWeight="Bold">
+                        Актуальные темы:
+                </Span>
+                    
+                <Span Foreground="Blue">
+                        инцидент в Керченском проливе
+    матч за звание чемпиона мира по шахматам
+                    </Span>
+            </Paragraph>
+               
+                <List MarkerStyle="Disc">
+
+                    <ListItem>
+                        <Paragraph>
+                            Посадочный модуль InSight успешно сел на Марс и передал первое изображение с его поверхности.
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            Китаянка Цзюй Вэньцзюнь (на фото) защитила титул чемпионки мира по шахматам, обыграв в финале россиянку Екатерину Лагно.</Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            Аргентинская подлодка «Сан-Хуан», спустя примерно год после исчезновения[en], найдена вблизи полуострова Вальдес.</Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            Международный комитет мер и весов принял новые определения килограмма, ампера, кельвина и моля.</Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            В результате лесных пожаров в Калифорнии погибли и пропали без вести более 1200 человек.</Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            На Новой Каледонии прошёл референдум о независимости от Франции — 56,67 % избирателей проголосовали против.
+                        </Paragraph>
+                    </ListItem>
+                </List>                
+            </FlowDocument>          
+        </TabItem>
+        <TabItem Header="Рубрикация">
+            <FlowDocumentScrollViewer IsSelectionEnabled="False" >
+            <FlowDocument>
+                <Paragraph FontSize="32">
+                    Википедия:Поиск по категориям
+                </Paragraph>
+                <Paragraph>
+                    Здесь представлена система рубрикации страниц русской Википедии в виде дерева категорий (рубрик). Чтобы развернуть список подкатегорий нажмите на значок ▸  слева от их названия. </Paragraph>
+                <Table>
+                        <Table.Columns>
+                            <TableColumn ></TableColumn>
+                            <TableColumn ></TableColumn>
+                            <TableColumn ></TableColumn>                            
+                        </Table.Columns>
+
+                        <TableRowGroup>
+                            <TableRow Foreground="Blue">
+                                <TableCell>
+                                    <Paragraph FontWeight="Bold">Тематическая рубрикация</Paragraph>
+                                </TableCell>
+                               
+                                <TableCell>
+                                    <Paragraph FontWeight="Bold">Предметная рубрикация</Paragraph>                                
+                                </TableCell>
+                                
+                                <TableCell>
+                                    <Paragraph FontWeight="Bold">Ассоциативная рубрикация</Paragraph>
+                                </TableCell>
+                                
+                            </TableRow>
+                            <TableRow Foreground="Blue">
+                                <TableCell>
+                                    <Paragraph>Информация</Paragraph></TableCell>
+                                <TableCell>
+                                    <Paragraph>Персонажи по параметру</Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>Категории абстрактных понятий</Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow Foreground="Blue">
+                                <TableCell>
+                                    <Paragraph>Общество</Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>Категории по войнам</Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>Категории дистрибутивов Linux</Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow Foreground="Blue">
+                                <TableCell>
+                                    <Paragraph>Объекты</Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>Категории по времени</Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>Категории журналов</Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow Foreground="Blue" >
+                                <TableCell>
+                                    <Paragraph>Появившиеся</Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>Категории по географическому расположению</Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>Категории географических объектов</Paragraph>
+                                </TableCell>
+                            </TableRow>
+                        </TableRowGroup>
+                    
+
+                    </Table>
+            </FlowDocument>
+            </FlowDocumentScrollViewer>
+        </TabItem>
+        
+    </TabControl>
+</Window>
